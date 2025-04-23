@@ -1,0 +1,157 @@
+
+body 
+{
+    background-color: #FAF9F6;
+    color: #0d1b2a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;           /* Center vertically */
+    margin: 0 auto; /* Added margin property to center the content */
+}
+
+
+h1 
+{
+    text-align: center;
+    color: #0d1b2a;
+    font-size: 64px;
+    text-align: center;
+}
+
+header h1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 5px 5px;
+    background-color: #afdcec;
+    border-radius: 10px;
+    max-width: 1000px; /* Set a maximum width for the header */
+    border: 5px solid #0d1b2a;
+    margin-bottom: 40px;    /* Adds space below the header */
+    margin-top: 60px;
+
+}
+
+/* Exact copy of working internal styles with small improvements */
+body .member-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+body .member {
+    text-align: center;
+    border-radius: 5px;
+    border: 2.5px solid #0d1b2a;
+    padding: 5px;
+}
+
+body .image-box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #999; /* Added 'solid' keyword */
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 2%;
+
+}
+
+body table {
+    margin: 0 auto;
+}
+
+html body #successMessage, 
+html body #errorMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body .error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Additional styles for header, etc. */
+
+/* Main container for both forms */
+.container {
+    display: flex;
+    justify-content: space-between;  /* This spreads the children apart */
+    max-width: 1000px;                     /* Take full width */
+    gap: 30px;                      /* Space between forms */
+    padding: 20px;
+    margin: 0;
+    transform: translate(-50%); /* Center the container by offsetting 50% of its size */
+    left: 50%;                      /* Move to the middle of the viewport horizontally */
+    position: absolute;             /* Position the container absolutely */
+
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;                    /* Take full width of parent */
+}
+
+/* Input fields and textarea */
+.form-container input,
+.form-container textarea {
+    width: 100%;                    /* Take full width of form */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', monospace;
+    box-sizing: border-box;         /* Include padding in width calculation */
+}
+
+.form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Roboto', monospace;
+    margin: 5px;  /* Add some space between buttons */
+    transition: all 0.2s ease;  /* Smooth hover effect */
+    align-items: center;
+}
+
+body .form-container button {
+    padding: 8px 16px;  /* Added more horizontal padding */
+    cursor: pointer;
+    color: #FAF9F6;
+    border: #0d1b2a 2px solid;
+    border-radius: 5px;
+    font-family: 'Roboto', monospace;
+    margin: 5px;  /* Add some space between buttons */
+    transition: all 0.2s ease;  /* Smooth hover effect */
+}
+
+/* Style for the login/submit button */
+body .form-container button[type="submit"] {
+    background-color: #4361ee;  /* Blue color for primary action */
+}
+
+body .form-container button[type="submit"]:hover {
+    background-color: #3251ee;  /* Slightly darker on hover */
+}
+
+/* Style for the reset button */
+body .form-container button[type="reset"] {
+    background-color: #6c757d;  /* Grey color for secondary action */
+}
+
+body .form-container button[type="reset"]:hover {
+    background-color: #5c636a;  /* Slightly darker on hover */
+}
