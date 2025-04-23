@@ -59,7 +59,8 @@
             <!-- Right Section -->
             <div class="right-section">
                 <form action="submit_complaint.php" method="POST" class="form-container">
-                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="text" name="first name" placeholder="Your First Name" required />
+                    <input type ="text" name="last name" placeholder ="Your Last Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
                     <textarea name="complaint" placeholder="Type your complaint here..." required></textarea>
                     <button type="submit">Submit Complaint</button>
