@@ -54,17 +54,25 @@
                 <form action="empty_database.php" method="POST" class="form-container" style="margin-top:10px;">
                     <button type="submit">Empty Database</button>
                 </form>
+
+                <form action="refill_database.php" method="POST" class="form-container" style="margin-top:10px;">
+                    <button type="submit">Refill Database</button>
+                </form>
             </div>
 
-            <!-- Right Section -->
             <div class="right-section">
-                <form action="submit_complaint.php" method="POST" class="form-container">
-                    <input type="text" name="first name" placeholder="Your First Name" required />
-                    <input type ="text" name="last name" placeholder ="Your Last Name" required />
-                    <input type="email" name="email" placeholder="Your Email" required />
-                    <textarea name="complaint" placeholder="Type your complaint here..." required></textarea>
-                    <button type="submit">Submit Complaint</button>
-                </form>
+            <form action="whine.php" method="POST" class="form-container">
+                <input type="text"   name="first_name"     placeholder="Your First Name"      required />
+                <input type="text"   name="last_name"      placeholder="Your Last Name"       required />
+                <input type="email"  name="email"          placeholder="Your Email"           required />
+                <input type="tel"    name="phone_number"   placeholder="Your Phone Number"    required />
+                <input type="text"   name="street_address" placeholder="Your Street Address"  required />
+                <input type="text"   name="city"           placeholder="Your City"            required />
+                <input type="text"   name="state"          placeholder="Your State (e.g., CA)" required />
+                <input type="text"   name="zip_code"       placeholder="Your Zip Code"        required />
+                <textarea name="complaint_text" placeholder="Type your complaint here..." required></textarea>
+                <button type="submit">Submit Complaint</button>
+            </form>
             </div>
         </div>
 

@@ -1,8 +1,9 @@
 <?php
+ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 session_start();
-include 'includes/db.php';
+require_once 'includes/db.php';
 
 if (!$conn || $conn->connect_error) {
     $_SESSION['error'] = "User not found.";
@@ -67,4 +68,3 @@ if ($stmt->num_rows === 1) {
     header("Location: index.php");
     exit();
 }
-exit();
